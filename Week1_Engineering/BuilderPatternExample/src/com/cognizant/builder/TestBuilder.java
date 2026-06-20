@@ -1,0 +1,17 @@
+package com.cognizant.builder;
+
+public class TestBuilder {
+
+    public static void main(String[] args) {
+
+        Computer computer = new Computer.Builder()
+                .setCpu("Intel i7")
+                .setRam("16 GB")
+                .setStorage("512 GB SSD")
+                .build();
+
+        computer.display();
+
+    }
+
+}
